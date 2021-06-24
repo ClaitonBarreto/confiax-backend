@@ -1,12 +1,12 @@
 FROM node:12-alpine
 
-WORKDIR /backend
+WORKDIR /confiax-backend
 
-COPY ./backend/package.json .
+COPY ./confiax-backend/package.json .
 
 RUN yarn
 
-COPY ./backend .
+COPY ./confiax-backend .
 
 EXPOSE 3333
 
