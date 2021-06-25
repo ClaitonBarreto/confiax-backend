@@ -1,6 +1,6 @@
 FROM node:12-alpine
 
-WORKDIR /confiax-backend
+WORKDIR /usr/src/app
 
 COPY ./confiax-backend/package.json .
 
@@ -10,4 +10,4 @@ COPY ./confiax-backend .
 
 EXPOSE 3333
 
-CMD yarn migration:run && yarn start
+CMD yarn migration:run && yarn start:dev
